@@ -11,6 +11,8 @@ As such, I have included their license in this repo.
 
 These icon sets may be used with the [Angular Material Design](https://material.angularjs.org/#/)
  project.
+ 
+ For a quick way to see which icons are available and which set they belong to, I highly recommend using [klarsys' demo](https://klarsys.github.io/angular-material-icons/) as a reference.
 
 In particular, they are in the required format to use with Angular Material Design's
 [$mdIconProvider]
@@ -58,6 +60,8 @@ I'm not sure if this is a limitation of using the iconset feature of Angular Mat
 
 **md-icon without width or height set**
 
+![alt without](https://github.com/nkoterba/material-design-iconsets/blob/master/issues/nocss.png)
+
 **Now setting the width and height via css**
 ```html
 	<md-button ng-click="vm.showNewDialog($event)">
@@ -69,6 +73,9 @@ I'm not sure if this is a limitation of using the iconset feature of Angular Mat
 
 **md-icon with css-set width and height -- NOT CORRECTLY SIZING**
 
+![alt without](https://github.com/nkoterba/material-design-iconsets/blob/master/issues/withcss.png)
+
+ ![alt without](https://github.com/nkoterba/material-design-iconsets/blob/master/issues/inspector.png)
 
 Although I've added width and height CSS properties, the svg graphic remains at 24px 24px.
 Instead the md-icon element is resized correctly and the svg image is clipped.
