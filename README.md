@@ -56,14 +56,19 @@ change the icon size.
 I'm not sure if this is a limitation of using the iconset feature of Angular Material Design or a
  general issue/bug with Material Design `md-icon` directive, or the way I'm trying to style them.
 
-Here's an example:
+**md-icon without width or height set**
+
+**Now setting the width and height via css**
 ```html
 	<md-button ng-click="vm.showNewDialog($event)">
-			<md-icon md-svg-icon="editor:attach_file"
-			         style="color: yellow; width: 10px; height:10px"></md-icon>
-				<span>New</span>
-		</md-button>
+		<md-icon md-svg-icon="editor:attach_file"
+			style="color: yellow; width: 10px; height:10px"></md-icon>
+		<span>New</span>
+	</md-button>
 ```
+
+**md-icon with css-set width and height -- NOT CORRECTLY SIZING**
+
 
 Although I've added width and height CSS properties, the svg graphic remains at 24px 24px.
 Instead the md-icon element is resized correctly and the svg image is clipped.
