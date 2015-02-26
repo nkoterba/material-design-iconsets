@@ -16,7 +16,7 @@ In particular, they are in the required format to use with Angular Material Desi
 [$mdIconProvider]
 (https://material.angularjs.org/#/api/material.components.icon/service/$mdIconProvider).
 
-To use:
+## Usage ##
 ```javascript
 angular.module('myApp', [])
 .config(['$mdIconProvider', function($mdIconProvider) {
@@ -43,12 +43,19 @@ angular.module('myApp', [])
 Now you can use them in your html quite easily:
 ```html
 	<md-button ng-click="vm.showNewDialog($event)">
-									<md-icon md-svg-icon="editor:attach_file"
-									         style="color: yellow;"></md-icon>
-										<span>New</span>
-								</md-button>
+		<md-icon md-svg-icon="editor:attach_file" style="color: yellow;"></md-icon>
+		<span>New</span>
+	</md-button>
 ```
 
-# BUGS #
+## Bugs/Issues ##
 
-For whatever reason,
+For whatever reason, setting the `width` and `height` of the icon in CSS does **not** change the
+icon size.
+
+I'm not sure if this is a limitation of using the iconset feature of Angular Material Design or a
+ general issue/bug with Material Design.
+
+ I've opened this issue with Angular Material Design team to try to find a solution to this problem.
+ 
+
