@@ -50,12 +50,23 @@ Now you can use them in your html quite easily:
 
 ## Bugs/Issues ##
 
-For whatever reason, setting the `width` and `height` of the icon in CSS does **not** change the
-icon size.
+For whatever reason, when I try to set the `width` and `height` of the icon in CSS does **not**
+change the icon size.
 
 I'm not sure if this is a limitation of using the iconset feature of Angular Material Design or a
- general issue/bug with Material Design.
+ general issue/bug with Material Design `md-icon` directive, or the way I'm trying to style them.
 
- I've opened this issue with Angular Material Design team to try to find a solution to this problem.
- 
+Here's an example:
+```html
+	<md-button ng-click="vm.showNewDialog($event)">
+			<md-icon md-svg-icon="editor:attach_file"
+			         style="color: yellow; width: 10px; height:10px"></md-icon>
+				<span>New</span>
+		</md-button>
+```
+
+Although I've added width and height CSS properties, the svg graphic remains at 24px 24px.
+Instead the md-icon element is resized correctly and the svg image is clipped.
+
+
 
