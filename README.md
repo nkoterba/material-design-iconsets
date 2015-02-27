@@ -52,6 +52,9 @@ Now you can use them in your html quite easily:
 
 ## Bugs/Issues ##
 
+**UPDATED: Feb 27, 2015** : The issues I was encountering were due to how I was using browserify and enabling certain parameters.  I'm now able to correctly color and size my iconset images using CSS styling.  Ignore the info below.
+
+
 For whatever reason, when I try to set the `width` and `height` of the icon in CSS does **not**
 change the icon size.
 
