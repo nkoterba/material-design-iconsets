@@ -1,0 +1,45 @@
+{
+  "name": "material-design-iconsets",
+  "version": "0.0.1",
+  "description": "Creates Icon Sets for use in Angular Material Design using the Google Material Design icons",
+  "main": "index.js",
+  "scripts": {
+    "init": "./node_modules/.bin/gulp init",
+    "build": "./node_modules/.bin/gulp build",
+    "clean": "./node_modules/.bin/gulp clean",
+    "cleanAll": "./node_modules/.bin/gulp cleanAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nkoterba/material-design-iconsets.git"
+  },
+  "keywords": [
+    "material",
+    "design",
+    "angular",
+    "google",
+    "iconsets",
+    "svg"
+  ],
+  "author": "Nathan Koterba <nathan.koterba@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nkoterba/material-design-iconsets/issues"
+  },
+  "homepage": "https://github.com/nkoterba/material-design-iconsets",
+  "dependencies": {
+    "del": "^1.1.1",
+    "event-stream": "^3.2.2",
+    "fs": "0.0.2",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-edit-xml": "^1.0.1",
+    "gulp-folders": "^1.1.0",
+    "gulp-git": "^1.0.0",
+    "gulp-if": "^1.2.5",
+    "gulp-replace": "^0.5.3",
+    "gulp-tap": "^0.1.3",
+    "mkdirp": "^0.5.0",
+    "path": "^0.11.14"
+  }
+}
