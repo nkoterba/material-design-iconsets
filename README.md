@@ -18,6 +18,24 @@ In particular, they are in the required format to use with Angular Material Desi
 [$mdIconProvider]
 (https://material.angularjs.org/#/api/material.components.icon/service/$mdIconProvider).
 
+## Building ##
+
+The repository contains the initial set of iconsets in the `Iconsets` folder.
+
+To re-create the icons from the Google Material Design icons source, do the following:
+
+```javascript
+npm install // Installs the necessary libs
+npm run init // Sets up the material-design-icons repo in the 'material-design-icons' folder
+npm run build // Downloads the latest icons from 'material-design-icons' git repo and builds the iconsets and saves them in the 'iconsets' folder
+
+npm run clean // Removes the 'iconsets' folder. Only need to re-run 'npm run build' to re-generate icons.
+npm run cleanAll // Removes the 'iconsets' folder and the 'material-design-icons' folder. Will need to re-run 'npm run init'.
+```
+Inspired by: Polymer's [core icons](https://github.com/Polymer/core-icons).
+
+Suggested by: [@programmist](https://github.com/programmist). See [Issue #1](https://github.com/nkoterba/material-design-iconsets/issues/1).
+
 ## Usage ##
 ```javascript
 angular.module('myApp', [])
