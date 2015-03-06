@@ -1,6 +1,6 @@
 # Angular Material Design Icon Sets #
 
-I posted this [issue](https://github.com/angular/material/issues/1514) on the Angular Material
+I posted this [issue](https://github.com/angular/material/issues/1668) on the Angular Material
 Design webpage asking if they would include icon-sets
 for the standard [Google Material Design icons](https://github.com/google/material-design-icons).
 
