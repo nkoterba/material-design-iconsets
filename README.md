@@ -70,6 +70,9 @@ Now you can use them in your html quite easily:
 
 ## Bugs/Issues ##
 
+**UPDATED: Apr 9, 2015** : Supposedly, the resizing issue I describe below was *not* due to my application, but by mismatches between jQuery and Angular Material Design.  This issue sounds like it has now been resolved. See: https://github.com/angular/material/issues/1679#issuecomment-88464723
+**END UPDATE**
+
 **UPDATED: Feb 27, 2015** : The issues I describe below were due to how I was using browserify and had my application structured.  I'm now able to correctly color and size my iconset images using CSS styling.  Ignore the info below...leaving for posterity.
 **END UPDATE**
 
