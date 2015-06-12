@@ -57,7 +57,7 @@ gulp.task('build', ['pull'], function() {
 				return test;
 			}))
 			.pipe(tap(function (file,t) {
-				var iconName = path.basename(file.path).replace(/ic_|_..px.svg/g, '');
+				var iconName = path.basename(file.path).replace(/^ic_|_..px.svg/g, '');
 
 				file.contents = new Buffer(file.contents.toString().replace('REPLACEME', iconName));
 			}))
