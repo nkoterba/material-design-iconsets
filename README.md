@@ -2,7 +2,7 @@
 
 **UPDATED: Jul 1, 2015**
 
-Added support thanks to @Stexxen to pull and build community material design icons from: https://materialdesignicons.com/.  Note that the resulting iconset file contains many duplicates from the default Google Material Design Icons and may also have slightly different names than their original Google counterparts.
+Added support thanks to [@Stexxen] [Pull Request #6](https://github.com/nkoterba/material-design-iconsets/pull/6) to pull and build community material design icons from: https://materialdesignicons.com/.  Note that the resulting iconset file contains many duplicates from the default Google Material Design Icons and may also have slightly different names than their original Google counterparts.
 
 See updated Building instructions below since this file is **not** built by default (but is included by default in the 'iconsets' folder).
 
