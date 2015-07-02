@@ -1,5 +1,13 @@
 # Angular Material Design Icon Sets #
 
+**UPDATED: Jul 1, 2015**
+
+Added support thanks to @Stexxen to pull and build community material design icons from: https://materialdesignicons.com/.  Note that the resulting iconset file contains many duplicates from the default Google Material Design Icons and may also have slightly different names than their original Google counterparts.
+
+See updated Building instructions below since this file is **not** built by default (but is included by default in the 'iconsets' folder).
+
+**END UPDATE**
+
 I posted this [issue](https://github.com/angular/material/issues/1668) on the Angular Material
 Design webpage asking if they would include icon-sets
 for the standard [Google Material Design icons](https://github.com/google/material-design-icons).
@@ -28,6 +36,7 @@ To re-create the icons from the Google Material Design icons source, do the foll
 npm install // Installs the necessary libs
 npm run init // Sets up the material-design-icons repo in the 'material-design-icons' folder
 npm run build // Downloads the latest icons from 'material-design-icons' git repo and builds the iconsets and saves them in the 'iconsets' folder
+npm run build-community // Downloads the latest icons from https://materialdesignicons.com/ git repo and builds them into a single iconset file 'mdi-icons.svg' and saves it in the 'iconsets' folder
 
 npm run clean // Removes the 'iconsets' folder. Only need to re-run 'npm run build' to re-generate icons.
 npm run cleanAll // Removes the 'iconsets' folder and the 'material-design-icons' folder. Will need to re-run 'npm run init'.
